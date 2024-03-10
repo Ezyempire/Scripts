@@ -1,0 +1,13 @@
+ sudo dnf update -y
+ sudo dnf install python3-pip -y
+ pip install ansible
+ cd /etc
+sudo mkdir ansible
+ sudo vim /etc/ansible/ansible.cfg
+  ansible --version
+ sudo vim /etc/ansible/inventory.ini
+ cd
+ vim NewEmpire.pem
+ chmod 400 NewEmpire.pem 
+  ansible production -m ping
+ ansible-playbook production.yaml
